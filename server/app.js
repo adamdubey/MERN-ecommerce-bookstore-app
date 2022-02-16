@@ -14,17 +14,15 @@ const userRoutes = require('./routes/user');
 const categoryRoutes = require('./routes/category');
 const productRoutes = require('./routes/product');
 
-
-
 // Database
 const mongoose = require('mongoose');
 
 mongoose
   .connect(process.env.MONGO_URI, {
-      useNewUrlParser: true
+    useNewUrlParser: true,
   })
-  .then(() => console.log("DB connected"))
-  .catch((err) => console.log("DB Error => ", err));
+  .then(() => console.log('DB connected'))
+  .catch((err) => console.log('DB Error => ', err));
 
 // Middlewares
 app.use(morgan('dev'));
@@ -34,17 +32,13 @@ app.use(expressValidator());
 app.use(cors());
 
 // Routes Middleware
-app.use("/api", authRoutes);
-app.use("/api", userRoutes);
-app.use("/api", categoryRoutes);
-app.use("/api", productRoutes);
+app.use('/api', authRoutes);
+app.use('/api', userRoutes);
+app.use('/api', categoryRoutes);
+app.use('/api', productRoutes);
 
-
-
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 8000;
 
 app.listen(port, () => {
-    console.log(`Server listening on port ${port}!`)
-})
-
-
+  console.log(`Server listening on port ${port}!`);
+});

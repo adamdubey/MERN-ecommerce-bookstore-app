@@ -37,3 +37,4 @@ _**Back-End (Server):**_
 - [formidable]()
 - [lodash]()
 - [cors]()
+- [prettier]()
