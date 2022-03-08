@@ -3,10 +3,15 @@ import Layout from './Layout';
 import Card from './Card';
 import { getCategories } from './apiCore';
 import Checkbox from './Checkbox';
+import Radiobox from './Radiobox';
+import { prices } from './fixedPrices';
 
 const Shop = () => {
   const [categories, setCategories] = useState([]);
   const [error, setError] = useState(false);
+  const [myFilters, setMyFilters] = useState({
+    filters: { category: [], price: [] },
+  });
 
   const init = () => {
     getCategories().then((data) => {
@@ -23,7 +28,9 @@ const Shop = () => {
   }, []);
 
   const handleFilters = (filters, filterBy) => {
-    //
+    const newFilters = { ...myFilters };
+    newFilters.filters[filterBy] = filters;
+    setMyFilters(newFilters);
   };
 
   return (
@@ -41,6 +48,14 @@ const Shop = () => {
               handleFilters={(filters) => handleFilters(filters, 'category')}
             />
           </ul>
+
+          <h4>Filter by Price</h4>
+          <div>
+            <Radiobox
+              prices={prices}
+              handleFilters={(filters) => handleFilters(filters, 'price')}
+            />
+          </div>
         </div>
         <div className="col-8">right area</div>
       </div>
