@@ -1,9 +1,5 @@
 # MERN Ecommerce Bookstore Webapp
 
-A MERN Ecommerce retail application.
-
----
-
 ## Quick Start
 
 _**Back-End (Server):**_
@@ -40,9 +36,10 @@ _**Front-End (Client):**_
 
 - [Bootstrap 4](https://getbootstrap.com/)
 - [Create React App](https://reactjs.org/docs/create-a-new-react-app.html)
+- [Prettier](https://prettier.io/)
+- [Query-string](https://github.com/sindresorhus/query-string)
 - [React.js](https://reactjs.org/)
 - [React-Router-DOM](https://v5.reactrouter.com/web/guides/quick-start)
-- [Prettier](https://prettier.io/)
 
 _**Back-End (Server):**_
 
