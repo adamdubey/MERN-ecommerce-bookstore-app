@@ -36,6 +36,7 @@ _**Front-End (Client):**_
 
 - [Bootstrap 4](https://getbootstrap.com/)
 - [Create React App](https://reactjs.org/docs/create-a-new-react-app.html)
+- [Moment.js](https://momentjs.com/)
 - [Prettier](https://prettier.io/)
 - [Query-string](https://github.com/sindresorhus/query-string)
 - [React.js](https://reactjs.org/)
