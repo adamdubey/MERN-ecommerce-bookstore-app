@@ -17,6 +17,15 @@ export const addItem = (item, next) => {
   }
 };
 
-export const updateItem = () => {}
+export const itemTotal = () => {
+  if (typeof window !== 'undefined') {
+    if (localStorage.getItem('cart')) {
+      return JSON.parse(localStorage.getItem('cart')).length;
+    }
+  }
+  return 0;
+};
 
-export const removeItem = () => {}
+export const updateItem = () => {};
+
+export const removeItem = () => {};
