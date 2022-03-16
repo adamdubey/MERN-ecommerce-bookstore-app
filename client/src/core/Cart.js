@@ -11,7 +11,6 @@ const Cart = () => {
   const [run, setRun] = useState(false);
 
   useEffect(() => {
-    console.log('MAX DEPTH ...');
     setItems(getCart());
   }, [run]);
 
@@ -20,9 +19,9 @@ const Cart = () => {
       <div>
         <h2>Your cart has {`${items.length}`} items</h2>
         <hr />
-        {items.map((product, i) => (
+        {items.map((product, index) => (
           <Card
-            key={i}
+            key={index}
             product={product}
             showAddToCartButton={false}
             cartUpdate={true}
