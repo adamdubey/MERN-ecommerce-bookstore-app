@@ -45,6 +45,7 @@ _**Front-End (Client):**_
 _**Back-End (Server):**_
 
 - [Body-parser](https://github.com/expressjs/body-parser)
+- [Braintree](https://github.com/braintree/braintree_node)
 - [Cookie-parser](https://github.com/expressjs/cookie-parser)
 - [CORS](https://expressjs.com/en/resources/middleware/cors.html)
 - [Dotenv](https://github.com/motdotla/dotenv)
