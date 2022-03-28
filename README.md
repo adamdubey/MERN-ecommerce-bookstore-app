@@ -35,6 +35,8 @@ $ npm start
 _**Front-End (Client):**_
 
 - [Bootstrap 4](https://getbootstrap.com/)
+- [Braintree](https://github.com/braintree/braintree_node)
+- [Braintree Web-Drop-In-React](https://www.npmjs.com/package/braintree-web-drop-in-react)
 - [Create React App](https://reactjs.org/docs/create-a-new-react-app.html)
 - [Moment.js](https://momentjs.com/)
 - [Prettier](https://prettier.io/)
@@ -45,6 +47,7 @@ _**Front-End (Client):**_
 _**Back-End (Server):**_
 
 - [Body-parser](https://github.com/expressjs/body-parser)
+- [Braintree](https://github.com/braintree/braintree_node)
 - [Cookie-parser](https://github.com/expressjs/cookie-parser)
 - [CORS](https://expressjs.com/en/resources/middleware/cors.html)
 - [Dotenv](https://github.com/motdotla/dotenv)
